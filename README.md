@@ -8,7 +8,7 @@ Flex and Bison are the GNU based succesors for Lex and Yacc.
 Flex builds a tokenizer and together with Bison creates a parser.
 
 Build flow to create the parser
-```{mermaid}
+```mermaid
 graph TD;
     A[parser.c]-->B[parser.tab.h];
     A-->C[parser.tab.c];
