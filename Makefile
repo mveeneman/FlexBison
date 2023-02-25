@@ -10,7 +10,7 @@ parser.tab.c: parser.y
 	bison -d $<
 
 parser: tokenizer.c parser.tab.c
-	 $(CC) $(CFLAGS) parser.tab.c tokenizer.c -o parser
+	 $(CC) parser.tab.c tokenizer.c -o parser $(CFLAGS)
 
 clean:
 	rm -f parser parser.tab.c parser.tab.h tokenizer.c
