@@ -1,7 +1,5 @@
-/* Reverse polish notation calculator. */
-
 %{
-#define YYSTYPE double
+
 #include <stdio.h>
 #include <math.h>
 
@@ -48,8 +46,9 @@ main() {
   yyparse ();
 }
 
-void yyerror (s)  /* Called by yyparse on error */
-     char *s;
+void 
+yyerror(s) 
+char *s;
 {
   printf ("%s\n", s);
 }

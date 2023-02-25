@@ -1,9 +1,10 @@
 %{
+
 #include <stdio.h>
 #include "parser.tab.h"
-int yylex();
-int yyerror();
+
 %}
+
 %%
 [0-9]+                  return NUMBER;
 heat                    return TOKHEAT;
