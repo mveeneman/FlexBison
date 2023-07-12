@@ -46,6 +46,13 @@ sudo apt install flex bison
 ## Build and execute
 
 ```
-make
-./parser
+$ make
+bison -d parser.y
+flex -o tokenizer.c tokenizer.l
+cc parser.tab.c tokenizer.c -o parser -O2 -lc -ll
+$ ./parser 
+heat off target temperature 62 heat on
+        Heat turned off
+        Temperature set to 62 Fahrenheit
+        Heat turned on
 ```
