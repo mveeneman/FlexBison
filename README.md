@@ -4,6 +4,19 @@ A quick example to get yourself started with **flex** and **bison**.
 If you want to start creating a quick parser out of the box, it may take too long to get a basic setup working.
 This repo is meant to get you started.
 
+```mermaid
+graph TD;
+    A[parser.y]--bison--> B[parser.tab.h];
+    A--bison--> C[parser.tab.c];
+    B--lex--> D[tokenizer.c];
+    E[tokenizer.l]--lex--> D;
+    C--cc--> F[parser]
+    B--cc--> F
+    D--cc--> F
+```
+
+This graph shows the build flow to create the parser executable (see Makefile)
+
 ## About flex and bison
 
 **Flex** and **bison** are tools for generating lexical analyzers (scanners) and parsers respectively, for use in computer programming.
@@ -16,17 +29,7 @@ Together, flex and bison form a powerful combination for building compilers and 
 
 Flex and bison are modern replacements for the older tools Lex and Yacc, respectively. Lex and Yacc were developed in the 1970s at AT&T Bell Labs and were widely used for many years in the development of compilers and interpreters.
 
-This graph shows the build flow to create the parser executable (see Makefile)
-```mermaid
-graph TD;
-    A[parser.y]--bison--> B[parser.tab.h];
-    A--bison--> C[parser.tab.c];
-    B--lex--> D[tokenizer.c];
-    E[tokenizer.l]--lex--> D;
-    C--cc--> F[parser]
-    B--cc--> F
-    D--cc--> F
-```
+
 
 ## Mac OSX
 
