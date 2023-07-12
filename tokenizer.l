@@ -6,9 +6,9 @@
 %}
 
 %%
-[0-9]+                  return NUMBER;
+[0-9]+                  yylval.intValue=atoi(yytext); return NUMBER;
 heat                    return TOKHEAT;
-on|off                  return STATE;
+on|off                  yylval.strValue=strdup(yytext); return STATE;
 target                  return TOKTARGET;
 temperature             return TOKTEMPERATURE;
 \n                      /* ignore end of line */;
