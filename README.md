@@ -48,6 +48,21 @@ heat off target temperature 62 heat on
         Heat turned on
 ```
 
+## Compiler Theory
+
+Compiler theory is a branch of computer science that deals with the design, implementation, and optimization of compilers. A compiler is a program that translates source code written in a high-level programming language into a lower-level language, such as assembly language or machine code.
+
+The main phases of a compiler are:
+
+1.  **Lexical Analysis:** Also known as scanning, this phase reads the source code and groups characters into meaningful sequences called lexemes. It produces a stream of tokens, each representing a lexeme (e.g., keywords, identifiers, operators).
+2.  **Syntax Analysis:** Also known as parsing, this phase takes the token stream from the lexical analyzer and verifies that it conforms to the grammatical rules of the source language. It typically constructs a parse tree or an abstract syntax tree (AST) representing the syntactic structure of the code.
+3.  **Semantic Analysis:** This phase checks the source code for semantic errors, ensuring that the meaning of the program is valid. It performs tasks like type checking, scope resolution, and ensuring that variables are declared before use.
+4.  **Intermediate Code Generation:** After semantic analysis, this phase translates the source code into an intermediate representation (IR). This IR is typically a lower-level, machine-independent representation that is easier to optimize and translate into machine code.
+5.  **Optimization:** This phase aims to improve the intermediate code to make it run faster, consume less memory, or both. Various optimization techniques can be applied, such as constant folding, dead code elimination, and loop optimization.
+6.  **Code Generation:** This is the final phase where the optimized intermediate code is translated into the target language, which is often machine code or assembly language for a specific processor architecture.
+
+These phases work together to transform a high-level program into an executable form.
+
 ## Reference links
 
 - [Flex project page](https://github.com/westes/flex/)
