@@ -69,3 +69,7 @@ These phases work together to transform a high-level program into an executable 
 - [Flex wiki](https://en.wikipedia.org/wiki/Flex_\(lexical_analyser_generator\))
 - [Bison project](https://www.gnu.org/software/bison/)
 - [Bison wiki](https://en.wikipedia.org/wiki/GNU_Bison)
+- [Wikipedia - Compiler](https://en.wikipedia.org/wiki/Compiler)
+- [Stanford CS143 - Compilers Course](https://web.stanford.edu/class/cs143/)
+
+A highly recommended textbook on the subject is "Compilers: Principles, Techniques, and Tools" by Aho, Sethi, and Ullman (often referred to as the Dragon Book).
